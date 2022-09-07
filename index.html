@@ -1,1 +1,70 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Shop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+
+            <img src="img/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Game Controller</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" alt="logo" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br> Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation </h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50 </h4>
+                <button type="text">Buy Now<img src="img/arrow.png" alt="arrow"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" alt="controller" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png" alt="add-button">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="img/fb.png" alt="social">
+            <img src="img/tw.png" alt="social">
+            <img src="img/ig.png" alt="social">
+        </div>
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                menuList.style.maxHeight = "230px";
+            else
+                menuList.style.maxHeight = "0px";                    
+        }
+
+    </script>
+</body>
+</html>
